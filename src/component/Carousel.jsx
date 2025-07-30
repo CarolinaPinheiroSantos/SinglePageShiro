@@ -32,9 +32,8 @@ function Carousel() {
       >
 
         <SwiperSlide className="bg-center bg-cover w-[300px] h-[350px] flex flex-col items-center">
-            
-            <img src={screen1} className="block w-full h-[300px] object-cover p-6" />
             <h1 className="text-4xl text-darkBlue font-extrabold px-3 text-center">Gerador de etiquetas</h1>
+            <img src={screen1} className="block w-full h-[300px] object-cover p-6" />
         </SwiperSlide>
 
         <SwiperSlide className="bg-center bg-cover w-[300px] h-[350px] flex flex-col items-center">
@@ -43,9 +42,8 @@ function Carousel() {
         </SwiperSlide>
 
         <SwiperSlide className="bg-center bg-cover w-[300px] h-[350px] flex flex-col items-center">
-            
-            <img src={screen3} className="block w-full h-[300px] object-cover p-6"/>
             <h1 className="text-4xl text-darkBlue font-extrabold px-3 text-center">Ranking de notas</h1>
+            <img src={screen3} className="block w-full h-[300px] object-cover p-6"/>
         </SwiperSlide>
 
         <SwiperSlide className="bg-center bg-cover w-[300px] h-[350px] flex flex-col items-center">
