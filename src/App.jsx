@@ -1,7 +1,7 @@
 import './App.css'
 import wallpaper from './assets/wallpaper5S.png';
 import mascote from './assets/shiro.png';
-import Card from './component/card.jsx';
+import Card from './component/Card.jsx'
 import icon1 from './assets/iconUtility.png';
 import icon2 from './assets/iconOrganization.png';
 import icon3 from './assets/iconStandardize.png';
