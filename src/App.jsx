@@ -9,7 +9,7 @@ import Feedback from './component/Feedbacks.jsx';
 import person1 from './assets/Heloisa.png';
 import person2 from './assets/Giovanna.png';
 import person3 from './assets/Laura.png';
-import team from './assets/team.png'
+import Members from './component/Members.jsx'
 
 function App() {
   return (
@@ -42,11 +42,11 @@ function App() {
       />
     </section>
 
-    <section>
+    <section className="mb-[100px]">
       <Carousel/>
     </section>
 
-    <section className="bg-blue p-6 flex flex-col justify-center">
+    <section className="bg-blue p-6 flex flex-col justify-center ">
         <h1 className="text-white text-2xl flex justify-center font-bold">O Que dizem nossos usuários:</h1>
 
         <Feedback
@@ -69,14 +69,11 @@ function App() {
     </section>
 
     <section>
-      <h1 className="text-4xl text-blue font-extrabold p-5">Nosso time</h1>
-      <img src={team} alt="" />
-      <div className='pr-8 text-1xl flex flex-row gap-4 '>
-        <p>Alyson Santos</p>
-        <p>Gabriel Bosco</p>
-        <p>Carolina Pinheiro</p>
-        <p>Rafael Macharete</p>
-      </div>
+      <Members
+      img={person1}
+      name="Gabriel Bosco"
+      role="full-stack"
+      />
     </section>
 
     </>

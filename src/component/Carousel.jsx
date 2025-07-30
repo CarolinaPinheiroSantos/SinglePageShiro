@@ -8,27 +8,24 @@ import screen1 from '../assets/labelGenerator.png';
 import screen2 from '../assets/rolePicker.png';
 import screen3 from '../assets/ranking.png';
 import screen4 from '../assets/feedback.png';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 function Carousel() {
   return (
     <div className="h-full bg-white text-white font-sans">
       <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
+        spaceBetween={30}
         centeredSlides={true}
-        slidesPerView={'auto'}
-        loop={true}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
         }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="w-full py-12"
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
       >
 
         <SwiperSlide className="bg-center bg-cover w-[300px] h-[350px] flex flex-col items-center">
