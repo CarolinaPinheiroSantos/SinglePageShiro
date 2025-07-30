@@ -12,7 +12,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 function Carousel() {
   return (
-    <div className="h-full bg-white text-white font-sans">
+    <div className="h-full w-full bg-white text-white font-sans">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -28,24 +28,24 @@ function Carousel() {
         className="mySwiper"
       >
 
-        <SwiperSlide className="bg-center bg-cover w-[300px] h-[350px] flex flex-col items-center">
-            <h1 className="text-4xl text-darkBlue font-extrabold px-3 text-center">Gerador de etiquetas</h1>
-            <img src={screen1} className="block w-full h-[300px] object-cover p-6" />
+        <SwiperSlide className="bg-center bg-cover w-[300px] h-[350px] flex flex-col justify-between items-center px-4 py-6">
+            <h1 className="text-4xl bg-blueGradient bg-clip-text text-transparent font-extrabold px-3 text-center">GERADOR DE ETIQUETAS</h1>
+            <img src={screen1} className="block w-full h-[300px] object-contain p-6" />
         </SwiperSlide>
 
-        <SwiperSlide className="bg-center bg-cover w-[300px] h-[350px] flex flex-col items-center">
-            <h1 className="text-4xl text-darkBlue font-extrabold px-3 text-center">Sorteador de funções</h1>
-            <img src={screen2} className="block w-full h-[300px] object-cover p-6"/>
+        <SwiperSlide className="bg-center bg-cover w-[300px] h-[350px] flex flex-col justify-between items-center px-4 py-6">
+            <h1 className="text-4xl bg-blueGradient bg-clip-text text-transparent font-extrabold px-3 text-center">SORTEADOR DE FUNÇÕES</h1>
+            <img src={screen2} className="block w-full h-[300px] object-contain p-6"/>
         </SwiperSlide>
 
-        <SwiperSlide className="bg-center bg-cover w-[300px] h-[350px] flex flex-col items-center">
-            <h1 className="text-4xl text-darkBlue font-extrabold px-3 text-center">Ranking de notas</h1>
-            <img src={screen3} className="block w-full h-[300px] object-cover p-6"/>
+        <SwiperSlide className="bg-center bg-cover w-[300px] h-[350px] flex flex-col justify-between items-center px-4 py-6">
+            <h1 className="text-4xl bg-blueGradient bg-clip-text text-transparent font-extrabold px-3 text-center">RANKING DE NOTAS</h1>
+            <img src={screen3} className="block w-full h-[300px] object-contain p-6"/>
         </SwiperSlide>
 
-        <SwiperSlide className="bg-center bg-cover w-[300px] h-[350px] flex flex-col items-center">
-            <h1 className="text-4xl text-darkBlue font-extrabold px-3 text-center">Acopanhamento de feedbacks</h1>
-            <img src={screen4} className="block w-full h-[300px] object-cover p-6"/>
+        <SwiperSlide className="bg-center bg-cover w-[300px] h-[350px] flex flex-col justify-between items-center px-4 py-6">
+            <h1 className="text-4xl bg-blueGradient bg-clip-text text-transparent font-extrabold px-3 text-center">MONITORAMENTO DE FEEDBACKS</h1>
+            <img src={screen4} className="block w-full h-[300px] object-contain p-6"/>
         </SwiperSlide>
       </Swiper>
     </div>

@@ -1,22 +1,22 @@
-import { div } from "framer-motion/client";
-
-function Members({ img, name, role }) {
+function Members({ imgProgrammer, nameProgrammer, role }) {
   return (
     <section
-      className="px-5 py-6 m-6 w-[300px] flex flex-col justify-center items-center gap-4 border rounded-lg overflow-hidden bg-white"
+      style={{ boxShadow: "2px 2px 50px #DCDCDC" }}
+      className="relative pt-20 pb-6 px-5 mx-3 my-4 w-[200px] h-[170px] flex flex-col justify-start items-center gap-1 border rounded-lg bg-white"
     >
-      <div className="flex flex-col items-center gap-2">
-        <img
-          src={img}
-          alt={name}
-          className="w-[100px] h-[100px] rounded-full object-cover"
-        />
-        <h2 className="text-lg font-semibold text-darkBlue">{name}</h2>
-        <h4 className="text-base text-darkBlue">{role}</h4>
-      </div>
+    <div className="absolute -top-12 w-[138px] h-[138px] rounded-full bg-blueGradient p-[4px] shadow-md">
+      <img
+        src={imgProgrammer}
+        alt={nameProgrammer}
+        className="w-full h-full rounded-full object-cover"
+      />
+    </div>
+
+
+      <h2 className="text-lg font-bold text-darkBlue mt-4 text-[14.8px]">{nameProgrammer}</h2>
+      <h4 className="text-base text-darkBlue">{role}</h4>
     </section>
   );
 }
 
 export default Members;
-
