@@ -1,4 +1,3 @@
-import './App.css'
 import wallpaper from './assets/wallpaper5S.png';
 import mascote from './assets/Shiro.png';
 import Card from './component/Card.jsx'
