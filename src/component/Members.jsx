@@ -1,4 +1,6 @@
-function Members({ imgProgrammer, nameProgrammer, role }) {
+    import 'bootstrap-icons/font/bootstrap-icons.css';
+
+function Members({ imgProgrammer, nameProgrammer, role, linkLinkedIn, linkGitHub}) {
   return (
     <section
       style={{ boxShadow: "2px 2px 50px #DCDCDC" }}
@@ -14,6 +16,22 @@ function Members({ imgProgrammer, nameProgrammer, role }) {
 
       <h2 className="text-2xl font-bold text-darkBlue mt-6 text-center">{nameProgrammer}</h2>
       <h2 className="text-lg text-darkBlue text-center">{role}</h2>
+      <ul className="mt-4 flex justify-center gap-6 list-none p-0">
+        {linkLinkedIn && (
+          <li>
+            <a href={linkLinkedIn} target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline flex items-center gap-1">
+              <i class="bi bi-linkedin lg:text-3xl"></i>
+            </a>
+          </li>
+        )}
+        {linkGitHub && (
+          <li>
+            <a href={linkGitHub} target="_blank" rel="noopener noreferrer" className="text-sm text-gray-800 hover:underline flex items-center gap-1">
+              <i class="bi bi-github lg:text-3xl"></i>
+            </a>
+          </li>
+        )}
+      </ul>
     </section>
 
 

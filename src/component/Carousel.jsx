@@ -50,7 +50,7 @@ function Carousel() {
 
         <SwiperSlide className="flex flex-col justify-between items-center w-full h-full px-4 py-6">
           <h1 className="text-2xl mx-[3rem] md:text-4xl lg:text-[4rem] lg:pb-4 bg-blueGradient bg-clip-text text-transparent font-extrabold px-3 text-center">
-            MONITORAMENTO DE FEEDBACKS
+            CONTROLE DE FEEDBACKS
           </h1>
           <img src={screen4} className="block w-full h-[90%] object-contain p-6 flex-1" />
         </SwiperSlide>

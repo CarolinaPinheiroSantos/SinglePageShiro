@@ -142,29 +142,40 @@ function App() {
 
 
     <section className="mt-16">
-      <h2 className="text-[3rem] lg:text-[5rem] font-bold text-center lg:text-left lg:pl-[14rem]  bg-blueGradient bg-clip-text text-transparent mb-12">TIME DO 5S</h2>
+      <h2 className="text-[3rem] lg:text-[5rem] font-bold text-center lg:text-left lg:pl-[14rem]  bg-blueGradient bg-clip-text text-transparent mb-20">TIME DO 5S</h2>
 
       <div className="flex flex-row justify-center gap-6">
 
-        <Members imgProgrammer={Programmer1} nameProgrammer="Gabriel Bosco" role="Full-stack" />
-        <Members imgProgrammer={Programmer2} nameProgrammer="Carolina Pinheiro" role="UI/UX" />
+        <Members imgProgrammer={Programmer1} nameProgrammer="Gabriel Bosco" role="Full-stack" linkGitHub="https://github.com/GabrielBoscoDeolindo"  linkLinkedIn="https://www.linkedin.com/in/gabriel-bosco-deolindo-50a7b32a2/"/>
+        <Members imgProgrammer={Programmer2} nameProgrammer="Carolina Pinheiro" role="UI/UX" linkGitHub="https://github.com/CarolinaPinheiroSantos"  linkLinkedIn="https://www.linkedin.com/in/carolina-pinheiro-dos-santos-874022321/"/>
 
       </div>
     </section>
 
     <section className="mt-16">
       <div className="flex flex-row justify-center gap-6">
-        <Members imgProgrammer={Programmer3} nameProgrammer="Rafael Silva" role="Back-end" />
-        <Members imgProgrammer={Programmer4} nameProgrammer="Alyson Pereira" role="Front-end" />
+        <Members imgProgrammer={Programmer3} nameProgrammer="Rafael Silva" role="Back-end" linkGitHub="https://github.com/RafaelMacharete"  linkLinkedIn="https://www.linkedin.com/in/rafael-macharete-338813299/"/>
+        <Members imgProgrammer={Programmer4} nameProgrammer="Alyson Pereira" role="Front-end" linkGitHub="https://github.com/AlysonG14"  linkLinkedIn="https://www.linkedin.com/in/alyson-pereira-dos-santos/"/>
       </div>
     </section>
 
-    <section className="bg-blue px-6 py-12 flex items-center gap-6 mt-14">
-      <Orbiting5S
-        centerImg={medalCenter}
-        surroundingImgs={[S1, S2, S3, S4, S5]}
-      />
-    </section>
+    <Orbiting5S
+      centerImg={medalCenter}
+      surroundingImgs={[
+        { src: S1, title: "Seiri - Utilização" },
+        { src: S2, title: "Seiketsu - Padronização)" },
+        { src: S3, title: "Seiso - Limpeza" },
+        { src: S4, title: "Shitsuke - Disciplina)" },
+        { src: S5, title: "Seiketsu - Padronização" },
+      ]}
+    />
+
+    <footer>
+        <div className="text-center text-sm text-white mt-5 pb-3 pt-3 bg-blue sm:text[0.5rem]">
+          © {new Date().getFullYear()} Shiro - Plataforma de 5S
+        </div>
+    </footer>
+
     </>
   );
 }
