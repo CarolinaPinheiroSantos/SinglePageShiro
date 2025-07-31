@@ -12,7 +12,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 function Carousel() {
   return (
-    <div className="w-full h-screen bg-white text-white font-sans px-4 py-10">
+    <div className="w-full  bg-white text-white font-sans px-4 py-10">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -25,7 +25,7 @@ function Carousel() {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper w-full h-full"
+        className="mySwiper h-[30rem] lg:w-full h-full"
       >
         <SwiperSlide className="flex flex-col justify-between items-center w-full h-full px-4 py-6">
           <h1 className="text-2xl md:text-4xl lg:text-[4rem] lg:pb-4 bg-blueGradient bg-clip-text text-transparent font-extrabold px-3 text-center">

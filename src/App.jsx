@@ -36,7 +36,7 @@ function App() {
         <h1 className="absolute z-10 text-white font-extrabold text-8xl lg:text-[12rem] px-5 py-20 lg:py-[350px]">SHIRO
         </h1>
 
-        <p className="absolute z-10 text-white font-extrabold text-3xl lg:text-[4rem] lg:py-[550px] px-5 py-[180px]">Seu melhor amigo no 5S!
+        <p className="absolute z-10 text-white font-extrabold text-[1.4rem] lg:text-[4rem] lg:py-[550px] px-5 py-[180px]">Seu melhor amigo no 5S!
         </p>
       </div>
 
@@ -51,19 +51,19 @@ function App() {
         alt=""
         className="hidden lg:block absolute w-full h-full object-cover"
       />
+      <img
+        src={mascote}
+        alt=""
+        className="absolute w-full max-w-xs -bottom-60 left-1/2 -translate-x-1/2 lg:hidden "
+      />
+
+      <img
+        src={zoomMascote}
+        alt=""
+        className="hidden lg:block absolute right-0 bottom-0 scale-[0.5] origin-bottom-right lg:flex items-end"
+      />
     </div>
 
-    <img
-      src={mascote}
-      alt=""
-      className="absolute w-full max-w-xs bottom-[120px] left-1/2 -translate-x-1/2 lg:hidden"
-    />
-
-    <img
-      src={zoomMascote}
-      alt=""
-      className="hidden lg:block absolute right-0 bottom-[5.12rem] h-[100%] w-[40%]"
-    />
 
     {/* Só desktoop */}
     <div className="hidden lg:flex flex-col items-center justify-center px-16 py-15 bg-white gap-10">
@@ -84,7 +84,7 @@ function App() {
     </div>
 
 
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mt-[200px] mt-[305px] mb-[100px]">
+    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mt-[200px] mt-[305px] mb-[30px]">
       <Card
         img={icon1}
         title="Eficiência"
@@ -104,7 +104,7 @@ function App() {
       />
     </section>
 
-    <section className="mb-[100px]">
+    <section>
       <Carousel/>
     </section>
 
