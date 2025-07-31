@@ -28,28 +28,28 @@ function Carousel() {
         className="mySwiper h-[30rem] lg:w-full h-full"
       >
         <SwiperSlide className="flex flex-col justify-between items-center w-full h-full px-4 py-6">
-          <h1 className="text-2xl md:text-4xl lg:text-[4rem] lg:pb-4 bg-blueGradient bg-clip-text text-transparent font-extrabold px-3 text-center">
+          <h1 className="text-2xl mx-[4rem] md:text-4xl lg:text-[4rem] lg:pb-4 bg-blueGradient bg-clip-text text-transparent font-extrabold px-3 text-center">
             GERADOR DE ETIQUETAS
           </h1>
           <img src={screen1} className="block w-full h-[90%] object-contain p-6 flex-1" />
         </SwiperSlide>
 
         <SwiperSlide className="flex flex-col justify-between items-center w-full h-full px-4 py-6">
-          <h1 className="text-2xl md:text-4xl lg:text-[4rem] lg:pb-4 bg-blueGradient bg-clip-text text-transparent font-extrabold px-3 text-center">
+          <h1 className="text-2xl mx-[4rem] md:text-4xl lg:text-[4rem] lg:pb-4 bg-blueGradient bg-clip-text text-transparent font-extrabold px-3 text-center">
             SORTEADOR DE FUNÇÕES
           </h1>
           <img src={screen2} className="block w-full h-[90%] object-contain p-6 flex-1" />
         </SwiperSlide>
 
         <SwiperSlide className="flex flex-col justify-between items-center w-full h-full px-4 py-6">
-          <h1 className="text-2xl md:text-4xl lg:text-[4rem] lg:pb-4 bg-blueGradient bg-clip-text text-transparent font-extrabold px-3 text-center">
+          <h1 className="text-2xl mx-[2rem] md:text-4xl lg:text-[4rem] lg:pb-4 bg-blueGradient bg-clip-text text-transparent font-extrabold px-3 text-center">
             RANKING DE NOTAS POR TURMA
           </h1>
           <img src={screen3} className="block w-full h-[90%] object-contain p-6 flex-1" />
         </SwiperSlide>
 
         <SwiperSlide className="flex flex-col justify-between items-center w-full h-full px-4 py-6">
-          <h1 className="text-2xl md:text-4xl lg:text-[4rem] lg:pb-4 bg-blueGradient bg-clip-text text-transparent font-extrabold px-3 text-center">
+          <h1 className="text-2xl mx-[3rem] md:text-4xl lg:text-[4rem] lg:pb-4 bg-blueGradient bg-clip-text text-transparent font-extrabold px-3 text-center">
             MONITORAMENTO DE FEEDBACKS
           </h1>
           <img src={screen4} className="block w-full h-[90%] object-contain p-6 flex-1" />

@@ -36,7 +36,7 @@ function App() {
         <h1 className="absolute z-10 text-white font-extrabold text-8xl lg:text-[12rem] px-5 py-20 lg:py-[350px]">SHIRO
         </h1>
 
-        <p className="absolute z-10 text-white font-extrabold text-[1.4rem] lg:text-[4rem] lg:py-[550px] px-5 py-[180px]">Seu melhor amigo no 5S!
+        <p className="absolute z-10 text-white font-extrabold text-[1.5rem] lg:text-[4rem] lg:py-[550px] px-5 py-[180px]">Seu melhor amigo no 5S!
         </p>
       </div>
 
