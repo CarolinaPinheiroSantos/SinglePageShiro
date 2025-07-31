@@ -68,7 +68,7 @@ function App() {
     {/* Só desktoop */}
     <div className="hidden lg:flex flex-col items-center justify-center px-16 py-15 bg-white gap-10">
       <div className="w-full px-[4rem] pt-[12rem]">
-        <h2 className="text-[3.5rem] text-center font-bold text-darkBlue mb-4">
+        <h2 className="text-[3.5rem] text-center font-bold bg-blueGradient bg-clip-text text-transparent mb-4">
           Eficiência, engajamento e gestão com a Plataforma 5S
         </h2>
         <p className="text-lg text-gray-700 text-center px-[14rem]">
@@ -159,7 +159,7 @@ function App() {
       </div>
     </section>
 
-    <section className="bg-blue px-6 py-12 flex items-center gap-6">
+    <section className="bg-blue px-6 py-12 flex items-center gap-6 mt-14">
       <Orbiting5S
         centerImg={medalCenter}
         surroundingImgs={[S1, S2, S3, S4, S5]}
