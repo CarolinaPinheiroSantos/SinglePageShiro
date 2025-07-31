@@ -12,7 +12,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 function Carousel() {
   return (
-    <div className="w-full  bg-white text-white font-sans px-4 py-10">
+    <div className="w-full lg:h-screen bg-white text-white font-sans px-4 py-10">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -43,7 +43,7 @@ function Carousel() {
 
         <SwiperSlide className="flex flex-col justify-between items-center w-full h-full px-4 py-6">
           <h1 className="text-2xl md:text-4xl lg:text-[4rem] lg:pb-4 bg-blueGradient bg-clip-text text-transparent font-extrabold px-3 text-center">
-            CONTROLE DE NOTAS
+            RANKING DE NOTAS POR TURMA
           </h1>
           <img src={screen3} className="block w-full h-[90%] object-contain p-6 flex-1" />
         </SwiperSlide>
