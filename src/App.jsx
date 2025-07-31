@@ -108,8 +108,8 @@ function App() {
       <Carousel/>
     </section>
 
-    <section className="bg-blue px-6 py-12 flex flex-col items-center gap-6">
-      <h1 className="text-white text-[1.25rem] md:text-[2rem] lg:text-[2.5rem] flex justify-center font-bold">
+    <section className="bg-blue px-4 sm:px-6 py-12 flex flex-col items-center gap-6 overflow-x-hidden">
+      <h1 className="text-white text-[1.4rem] md:text-[2rem] lg:text-[2.5rem] flex justify-center font-bold">
         O QUE DIZEM NOSSOS USUÁRIOS:
       </h1>
 
@@ -142,7 +142,7 @@ function App() {
 
 
     <section className="mt-16">
-      <h2 className="text-[3.5rem] lg:text-[5rem] font-bold text-center lg:text-left lg:pl-[14rem]  bg-blueGradient bg-clip-text text-transparent mb-12">TIME DO 5S</h2>
+      <h2 className="text-[3rem] lg:text-[5rem] font-bold text-center lg:text-left lg:pl-[14rem]  bg-blueGradient bg-clip-text text-transparent mb-12">TIME DO 5S</h2>
 
       <div className="flex flex-row justify-center gap-6">
 
@@ -152,10 +152,10 @@ function App() {
       </div>
     </section>
 
-    <section className="m-16">
+    <section className="mt-16">
       <div className="flex flex-row justify-center gap-6">
-        <Members imgProgrammer={Programmer3} nameProgrammer="Rafael Macharete" role="Full-stack" />
-        <Members imgProgrammer={Programmer4} nameProgrammer="Alyson Pereira" role="Back-end" />
+        <Members imgProgrammer={Programmer3} nameProgrammer="Rafael Silva" role="Back-end" />
+        <Members imgProgrammer={Programmer4} nameProgrammer="Alyson Pereira" role="Front-end" />
       </div>
     </section>
 

@@ -13,7 +13,7 @@ function Members({ imgProgrammer, nameProgrammer, role }) {
       </div>
 
       <h2 className="text-2xl font-bold text-darkBlue mt-6 text-center">{nameProgrammer}</h2>
-      <h4 className="text-lg text-darkBlue text-center">{role}</h4>
+      <h2 className="text-lg text-darkBlue text-center">{role}</h2>
     </section>
 
 

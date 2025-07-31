@@ -38,7 +38,7 @@ function Card({ img, title, text, centerOnTablet = false }) {
       animate={controls}
       style={{ boxShadow: "2px 2px 50px #DCDCDC" }}
       className={`px-5 m-6 h-[300px] flex flex-col justify-center items-center gap-4 border rounded-lg overflow-hidden ${
-        centerOnTablet ? "md:col-span-2 md:mx-auto lg:col-span-1 lg:mx-0" : ""
+        centerOnTablet ? "md:col-span-2 lg:col-span-1 lg:mx-0" : ""
       }`}
     >
       <motion.img

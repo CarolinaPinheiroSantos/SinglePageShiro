@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 function Orbiting5S({ centerImg, surroundingImgs = [] }) {
   return (
     <div className="relative w-full h-[400px] sm:h-[500px] flex items-center justify-center overflow-visible">
-      {/* Orbiting container */}
+      {/* Orbiting container girando em volta do centro */}
       <motion.div
         className="absolute w-[280px] sm:w-[400px] h-[280px] sm:h-[400px] rounded-full"
         animate={{ rotate: 360 }}
@@ -17,23 +17,37 @@ function Orbiting5S({ centerImg, surroundingImgs = [] }) {
             const y = radius * Math.sin((angle * Math.PI) / 180);
 
             return (
-              <img
+              <div
                 key={i}
-                src={img}
-                alt={`orbit-${i}`}
-                className="absolute w-[60px] sm:w-[80px] h-[60px] sm:h-[80px] object-contain rounded-full shadow-md"
+                className="absolute"
                 style={{
                   left: "40%",
                   top: "40%",
-                  transform: `translate(${x}px, ${y}px)`
+                  transform: `translate(${x}px, ${y}px)`,
                 }}
-              />
+              >
+                <motion.div
+                  animate={{ rotate: 360 }}
+                  transition={{
+                    repeat: Infinity,
+                    duration: 40,
+                    ease: "linear",
+                  }}
+                  className="w-[60px] sm:w-[80px] h-[60px] sm:h-[80px]"
+                >
+                  <img
+                    src={img}
+                    alt={`orbit-${i}`}
+                    className="w-full h-full object-contain rounded-full shadow-md"
+                  />
+                </motion.div>
+              </div>
             );
           })}
         </div>
       </motion.div>
 
-      {/* Central image */}
+      {/* Central image parada */}
       <img
         src={centerImg}
         alt="center"
