@@ -2,15 +2,15 @@ import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-function Card({ img, title, text }) {
+function Card({ img, title, text, centerOnTablet = false }) {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.4 }); 
+  const [ref, inView] = useInView({ threshold: 0.4 });
 
   useEffect(() => {
     if (inView) {
       controls.start("visible");
     } else {
-      controls.start("hidden"); 
+      controls.start("hidden");
     }
   }, [inView, controls]);
 
@@ -37,7 +37,9 @@ function Card({ img, title, text }) {
       initial="hidden"
       animate={controls}
       style={{ boxShadow: "2px 2px 50px #DCDCDC" }}
-      className="px-5 m-6 h-[300px] flex flex-col justify-center items-center gap-4 border rounded-lg overflow-hidden"
+      className={`px-5 m-6 h-[300px] flex flex-col justify-center items-center gap-4 border rounded-lg overflow-hidden ${
+        centerOnTablet ? "md:col-span-2 md:mx-auto lg:col-span-1 lg:mx-0" : ""
+      }`}
     >
       <motion.img
         src={img}
@@ -50,7 +52,7 @@ function Card({ img, title, text }) {
         className="flex flex-col items-center"
       >
         <h1 className="text-4xl text-darkBlue font-extrabold">{title}</h1>
-        <p className="text-center">{text}</p>
+        <p className="text-center text-gray-700">{text}</p>
       </motion.div>
     </motion.section>
   );

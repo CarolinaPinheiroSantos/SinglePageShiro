@@ -2,20 +2,21 @@ function Members({ imgProgrammer, nameProgrammer, role }) {
   return (
     <section
       style={{ boxShadow: "2px 2px 50px #DCDCDC" }}
-      className="relative pt-20 pb-6 px-5 mx-3 my-4 w-[200px] h-[170px] flex flex-col justify-start items-center gap-1 border rounded-lg bg-white"
+      className="relative lg:pt-28 pt-[5rem] pb-8 px-6 mx-4 my-6 w-full max-w-md sm:max-w-lg md:max-w-xl flex flex-col justify-start items-center gap-2 border rounded-2xl bg-white"
     >
-    <div className="absolute -top-12 w-[138px] h-[138px] rounded-full bg-blueGradient p-[4px] shadow-md">
-      <img
-        src={imgProgrammer}
-        alt={nameProgrammer}
-        className="w-full h-full rounded-full object-cover"
-      />
-    </div>
+      <div className="absolute -top-20 w-[160px] h-[160px] sm:w-[180px] sm:h-[180px] md:w-[200px] md:h-[200px] rounded-full bg-blueGradient p-[5px] shadow-md">
+        <img
+          src={imgProgrammer}
+          alt={nameProgrammer}
+          className="w-full h-full rounded-full object-cover"
+        />
+      </div>
 
-
-      <h2 className="text-lg font-bold text-darkBlue mt-4 text-[14.8px]">{nameProgrammer}</h2>
-      <h4 className="text-base text-darkBlue">{role}</h4>
+      <h2 className="text-2xl font-bold text-darkBlue mt-6 text-center">{nameProgrammer}</h2>
+      <h4 className="text-lg text-darkBlue text-center">{role}</h4>
     </section>
+
+
   );
 }
 
