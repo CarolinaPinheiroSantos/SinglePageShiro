@@ -163,10 +163,10 @@ function App() {
       centerImg={medalCenter}
       surroundingImgs={[
         { src: S1, title: "Seiri - Utilização" },
-        { src: S2, title: "Seiketsu - Padronização)" },
+        { src: S2, title: "Seiketsu - Padronização" },
         { src: S3, title: "Seiso - Limpeza" },
-        { src: S4, title: "Shitsuke - Disciplina)" },
-        { src: S5, title: "Seiketsu - Padronização" },
+        { src: S4, title: "Shitsuke - Disciplina" },
+        { src: S5, title: "Seire - Organização" },
       ]}
     />
 
