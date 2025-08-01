@@ -120,7 +120,7 @@ function Carousel() {
           alt="Mascote"
           className="
             block sm:hidden
-            absolute top-40 left-[20rem]
+            absolute top-40 left-[18.5rem]
             w-20 sm:w-28 md:w-36
             drop-shadow-xl
             pointer-events-none
