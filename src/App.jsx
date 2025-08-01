@@ -170,6 +170,10 @@ function App() {
       ]}
     />
 
+    <div className="text-center">
+      <p className="text-gray-700">Clique nos emblemas e descubra<i class="bi bi-hand-index-thumb"></i></p>
+    </div>
+
     <footer>
         <div className="text-center text-sm text-white mt-5 pb-3 pt-3 bg-blue sm:text[0.5rem]">
           © {new Date().getFullYear()} Shiro - Plataforma de 5S

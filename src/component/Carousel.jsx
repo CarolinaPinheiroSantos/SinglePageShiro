@@ -16,78 +16,120 @@ import screen3 from '../assets/rankingScreen.png';
 import screen4 from '../assets/feedbackScreen.png';
 import screen5 from '../assets/groupManagementScreen.png';
 
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import mascote2 from '../assets/shiro2.png';
+import { Autoplay, Pagination } from 'swiper/modules';
 
 function Carousel() {
+  const slides = [
+    {
+      title: 'GERADOR DE ETIQUETAS',
+      mobileImg: screen1,
+      desktopImg: computer1,
+    },
+    {
+      title: 'SORTEADOR DE FUNÇÕES',
+      mobileImg: screen2,
+      desktopImg: computer2,
+    },
+    {
+      title: 'RANKING DE NOTAS',
+      mobileImg: screen3,
+      desktopImg: computer3,
+    },
+    {
+      title: 'CONTROLE DE FEEDBACKS',
+      mobileImg: screen4,
+      desktopImg: computer4,
+    },
+    {
+      title: 'GERENCIAMENTO',
+      mobileImg: screen5,
+      desktopImg: computer5,
+    },
+  ];
+
   return (
-    <div className="w-full lg:h-screen bg-white text-white font-sans px-4 py-10">
-      <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        loop={true} // 🔹 Volta para o início quando chega no final
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Autoplay, Pagination]}
-        className="mySwiper h-[30rem] lg:w-full h-full"
-      >
-        {/* Slide 1 */}
-        <SwiperSlide className="flex flex-col justify-between items-center w-full h-full px-4 py-4">
-          <h1 className="text-[1.50rem] lg:text-[4rem] lg:pb-4 bg-blueGradient bg-clip-text text-transparent font-extrabold px-3 pb-3 text-center">
-            GERADOR DE ETIQUETAS
-          </h1>
+    <div className="w-full lg:h-screen bg-white font-sans px-4 py-10">
+      
+      {/* ===== Desktop Original ===== */}
+      <div className="hidden lg:block w-full h-full">
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Autoplay, Pagination]}
+          className="mySwiper lg:w-full h-full"
+        >
+          {slides.map((slide, index) => (
+            <SwiperSlide
+              key={index}
+              className="flex flex-col justify-between items-center w-full h-full px-4 py-4"
+            >
+              <h1 className="text-[1.50rem] lg:text-[4rem] lg:pb-4 bg-blueGradient bg-clip-text text-transparent font-extrabold px-3 pb-3 text-center">
+                {slide.title}
+              </h1>
+              <img
+                src={slide.desktopImg}
+                className="w-full h-[90%] object-contain p-6 flex-1"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
 
-          {/* Mobile */}
-          <img src={screen1} className="block md:m-0px md:hidden w-full h-[90%] object-contain flex-1" />
+      {/* ===== Mobile / Tablet com Mascote Sobreposto ===== */}
+      <div className="block lg:hidden relative w-full h-full">
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Autoplay, Pagination]}
+          className="mySwiper w-full h-full"
+        >
+          {slides.map((slide, index) => (
+            <SwiperSlide
+              key={index}
+              className="flex flex-col justify-between items-center w-full h-full px-4 py-4"
+            >
+              <h1 className="text-[1.50rem] bg-blueGradient bg-clip-text text-transparent font-extrabold px-3 pb-3 text-center">
+                {slide.title}
+              </h1>
+              <img
+                src={slide.mobileImg}
+                className="w-full object-contain flex-1"
+              />
+            </SwiperSlide>
+          ))}
 
-          {/* Tablet e Desktop */}
-          <img src={computer1} className="hidden md:block w-full h-[90%] object-contain p-6 flex-1" />
-        </SwiperSlide>
+                  <img
+          src={mascote2}
+          alt="Mascote"
+          className="
+            block sm:hidden
+            absolute top-40 left-[20rem]
+            w-20 sm:w-28 md:w-36
+            drop-shadow-xl
+            pointer-events-none
+            z-10
+          "
+        />
+        </Swiper>
 
-        {/* Slide 2 */}
-        <SwiperSlide className="flex flex-col justify-between items-center w-full h-full px-4 py-6">
-          <h1 className="text-[1.50rem] lg:text-[4rem] lg:pb-4 bg-blueGradient bg-clip-text text-transparent font-extrabold px-2 pb-3 text-center">
-            SORTEADOR DE FUNÇÕES
-          </h1>
-
-          <img src={screen2} className="block md:m-0px md:hidden w-full h-[90%] object-contain flex-1" />
-          <img src={computer2} className="hidden md:block w-full h-[90%] object-contain p-6 flex-1" />
-        </SwiperSlide>
-
-        {/* Slide 3 */}
-        <SwiperSlide className="flex flex-col justify-between items-center w-full h-full px-4 py-6">
-          <h1 className="text-[1.50rem] lg:text-[4rem] lg:pb-4 bg-blueGradient bg-clip-text text-transparent font-extrabold px-3 pb-3 text-center">
-            RANKING DE NOTAS
-          </h1>
-
-          <img src={screen3} className="block md:m-0px md:hidden w-full h-[90%] object-contain flex-1" />
-          <img src={computer3} className="hidden md:block w-full h-[90%] object-contain p-6 flex-1" />
-        </SwiperSlide>
-
-        {/* Slide 4 */}
-        <SwiperSlide className="flex flex-col justify-between items-center w-full h-full px-4 py-6">
-          <h1 className="text-[1.50rem] lg:text-[4rem] lg:pb-4 bg-blueGradient bg-clip-text text-transparent font-extrabold px-3 pb-3 text-center">
-            CONTROLE DE FEEDBACKS
-          </h1>
-
-          <img src={screen4} className="block md:m-0px md:hidden w-full h-[90%] object-contain flex-1" />
-          <img src={computer4} className="hidden md:block w-full h-[90%] object-contain p-6 flex-1" />
-        </SwiperSlide>
-
-        {/* Slide 5 */}
-        <SwiperSlide className="flex flex-col justify-between items-center w-full h-full px-4 py-6">
-          <h1 className="text-[1.50rem] lg:text-[4rem] lg:pb-4 bg-blueGradient bg-clip-text text-transparent font-extrabold px-3 pb-3 text-center">
-            GERENCIAMENTO
-          </h1>
-
-          <img src={screen5} className="block md:m-0px md:hidden w-full h-[90%] object-contain flex-1" />
-          <img src={computer5} className="hidden md:block w-full h-[90%] object-contain p-6 flex-1" />
-        </SwiperSlide>
-      </Swiper>
+      </div>
     </div>
   );
 }
