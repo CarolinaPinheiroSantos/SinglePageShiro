@@ -115,12 +115,12 @@ function Carousel() {
             </SwiperSlide>
           ))}
 
-                  <img
+          <img
           src={mascote2}
           alt="Mascote"
           className="
             block sm:hidden
-            absolute top-40 left-[18.5rem]
+            absolute top-[53%] left-[75%]
             w-20 sm:w-28 md:w-36
             drop-shadow-xl
             pointer-events-none
